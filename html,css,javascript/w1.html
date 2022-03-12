@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>1주차 과제</title>
+ <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+        .item-img {
+            width: 500px;
+            height: 500px;
+
+            background-image: url("https://thumbnail7.coupangcdn.com/thumbnails/remote/300x300ex/image/retail/images/15253319283549-60b79cb1-aa85-4c2f-90e2-868856b5d540.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .price {
+            font-size: 15px;
+        }
+
+        .item-desc {
+            width: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .item-order {
+            width: 500px;
+        }
+
+        .btn-order {
+            margin: auto;
+            width: 100px;
+            display: block;
+        }
+
+        .wrap {
+            width: 540px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(255, 230, 230);
+        }
+    </style>
+
+    <script>
+        function order(){
+            alert('주문이 완료되었습니다!');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item-img"></div>
+        <div class="item-desc">
+            <h2><b>크렌베리 믹스넛</b><br><span class="price">가격:9,400원/개</span></h2>
+            <hr>
+            <p class="text">크랜베리와 다양한 종류의 견과류가 담긴 믹스넛입니다. 투명한 용기에 뚜껑이 있어 보관이 편리하며, 심심풀이 주전부리 혹은 다른 요리에 활용 가능합니다. 건강 간식으로
+                포만감을 느껴보세요!</p>
+        </div>
+        <div class="item-order">
+            <div>
+                <h5><b>주문하기</b></h5>
+            </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">이름</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                           placeholder="성함을 입력해주세요">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">수량</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>수량을 선택하세요</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">주소</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                           placeholder="주소를 입력해주세요">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">번호</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default"
+                           placeholder="ex)000-0000-0000">
+                </div>
+                <button type="button" onclick="order()" class="btn btn-primary btn-order">주문하기</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
